@@ -8,26 +8,15 @@
           <label for="name"></label>
         </div>
         <div class="bottom_btn dark_blue">
-          <router-link to="/weight">Start</router-link>
+          <router-link to="weight">Start</router-link>
+          <router-view></router-view>	
         </div>
       </div>
     </div>
-      <router-view></router-view>
   </div>
 </template>
 
 <script>
-/* 
-let router = new VueRouter({
-  routes: [
-    {
-      path: '/main'
-    },
-    {
-      path: '/weight'
-    }
-  ]
-}); */
 
 export default {
   data: function(){
@@ -35,14 +24,7 @@ export default {
       username: '',
     }
   },
-  methods: {
-    
-  },
-  /* router: router */
 }
-
-
-
 
 
 </script>

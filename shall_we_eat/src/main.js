@@ -1,19 +1,18 @@
-/* import Vue from 'vue'
+import { createApp } from 'vue'
 import Main from './main.vue'
-import VueRouter from 'vue-router'
+import router from './router'
 
-Vue.use(VueRouter) */
 
-import Vue from 'vue'
+const myApp = createApp(Main);
+
+myApp.use(router).mount('#app')
+
+/* 
+import Vue from 'vue';
 import Main from './main.vue'
-import VueRouter from './router/index.js'
-Vue.config.productionTip = false
+import router from './router/index.js'
 
 new Vue({
-  render: h => h(Main), //위의 컴포트 App 파일을 불러오는 것
-    //render: 는 아래의 components와 같다.
-    //components: {
-    //'app': App
-    //}
-  router: VueRouter,
-}).$mount('#app') //$mount 는 el: 이랑 같다. */
+  router,
+  render: h =>(Main),
+}).$mount('#app') */
